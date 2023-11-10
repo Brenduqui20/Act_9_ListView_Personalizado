@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:backgroundTint="#FF4500"
+                android:textColor="#FF0000"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ÁREA Y PERÍMETRO DE UN TRIÁNGULO RECTÁNGULO"
+                    android:textStyle="bold"
+                    android:textColor="#4B0082"
+                    android:gravity="center"
+                    android:textSize="25sp"/>
+
+                <TextView
+                    android:id="@+id/textViewPerimetro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PERÍMETRO: "
+                    android:textStyle="bold"
+                    android:textColor="#6495ED"
+                    android:textSize="25sp"/>
+
+                <TextView
+                    android:id="@+id/textViewArea"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ÁREA: "
+                    android:textColor="#6495ED"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:paddingTop="8dp"/>
+
+                <Button
+                    android:id="@+id/buttonRegresar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:backgroundTint="#FF0000"
+                    android:text="REGRESAR"
+                    android:textSize="17sp"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/editTextCatetoA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Cateto A"
+                android:textSize="25sp"
+                android:inputType="numberDecimal"/>
+
+            <EditText
+                android:id="@+id/editTextCatetoB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Cateto B"
+                android:textSize="25sp"
+                android:inputType="numberDecimal"/>
+
+            <Button
+                android:id="@+id/buttonCalcular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CALCULAR EL ÁREA Y PERÍMETRO"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:backgroundTint="#98FB98"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
+
+
+
